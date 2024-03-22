@@ -1,6 +1,8 @@
 ARCHS = arm64 arm64e
-TARGET = iphone:clang:latest:11.4
-
+TARGET = iphone:clang:15.6
+FINALPACKAGE = 1
+PREFIX = $(THEOS)/toolchain/Xcode.xctoolchain/usr/bin/
+THEOS_PACKAGE_SCHEME=rootless
 include $(THEOS)/makefiles/common.mk
 
 LIBRARY_NAME = libpddokdo
